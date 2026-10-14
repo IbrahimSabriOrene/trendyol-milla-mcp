@@ -1,0 +1,26 @@
+{
+  "name": "trendyol-milla-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for searching clothing on trendyol-milla.com via stealth Chrome",
+  "type": "module",
+  "bin": {
+    "trendyol-milla-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "selftest": "tsc && node dist/selftest.js",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "playwright-core": "^1.49.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
